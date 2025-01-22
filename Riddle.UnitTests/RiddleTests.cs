@@ -51,7 +51,7 @@ namespace Riddle.UnitTests
         public void Guess_WhenGuessEqualsSecretNumber_ReturnsCorrect()
         {
             var secretNumberField = typeof(Riddle).GetField("_secretNumber", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            secretNumberField.SetValue(_riddle, 50);
+            secretNumberField.SetValue(_riddle, 51);
 
             var result = _riddle.Guess("50");
 
